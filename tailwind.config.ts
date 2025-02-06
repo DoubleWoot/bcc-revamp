@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        trap: ["Trap", "Arial", "Helvetica", "sans-serif"],
+        neue: ["NeueMetana", "Arial", "Helvetica", "sans-serif"],
+      },
     },
   },
   plugins: [],
