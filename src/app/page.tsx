@@ -1,5 +1,7 @@
 "use client";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import website_logo from "../../public/bg-assets/bcc-logo.png";
 import calabarzon_background from "../../public/bg-assets/calabarzon.jpg";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Images } from "lucide-react";
@@ -135,6 +137,30 @@ export default function Home() {
           allowFullScreen
         ></iframe>
       </div>
+
+      {/* TODO:  Add the entire list for partners & sponsors */}
+      <div className="flex flex-col items-center justify-center my-12 text-center">
+        <div className="flex items-center space-x-4">
+          <img
+            src={website_logo.src}
+            alt="Blockchain Campus Conference Logo"
+            draggable="false"
+          />
+          <h1 className="font-trap font-bold text-3xl">
+            Our Partners & Sponsors
+          </h1>
+        </div>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdRbCzlbmlWxpr8KXvmgUl5IC_ciaNwQMvrCMpepUw5wK-eqA/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 px-6 py-2 bg-gray-200 text-[#0F1728] font-trap font-bold rounded-full hover:bg-gray-300 transition"
+        >
+          Become A Sponsor/Partner
+        </a>
+      </div>
+
+      <Footer />
     </>
   );
 }

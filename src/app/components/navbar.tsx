@@ -12,7 +12,8 @@ export default function Navbar() {
           <img
             className="h-6"
             src={website_logo.src}
-            alt="Blockchain Conference Logo"
+            alt="Blockchain Campus Conference Logo"
+            draggable="false"
           />
           <h1 className="font-bold font-trap text-2xl">BCC2025</h1>
         </div>
