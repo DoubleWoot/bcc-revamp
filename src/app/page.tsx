@@ -12,6 +12,13 @@ const bcc_images = Array.from(
     `../../bcc2024-images/bcc-2024-${String(i + 1).padStart(2, "0")}.jpg`
 );
 
+// Placeholder logos
+const sponsorLogos = Array.from(
+  { length: 12 },
+  (_, i) =>
+    `../../sponsor-logos/sponsor_logo_${String(i + 1).padStart(2, "0")}.png`
+);
+
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
@@ -158,6 +165,17 @@ export default function Home() {
         >
           Become A Sponsor/Partner
         </a>
+        <div className="grid grid-cols-6 mt-6 px-4 space-x-6">
+          {sponsorLogos.map((logo, index) => (
+            <img
+              key={index}
+              src={logo}
+              className="x-[200px] h-[200px] object-contain mx-auto"
+              alt="Our sponsors"
+              draggable="false"
+            />
+          ))}
+        </div>
       </div>
 
       <Footer />
