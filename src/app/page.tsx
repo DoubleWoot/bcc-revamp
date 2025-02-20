@@ -4,7 +4,6 @@ import Footer from "./components/footer";
 import website_logo from "../../public/bg-assets/bcc-logo.png";
 import calabarzon_background from "../../public/bg-assets/calabarzon.jpg";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Images } from "lucide-react";
 
 const bcc_images = Array.from(
   { length: 10 },
