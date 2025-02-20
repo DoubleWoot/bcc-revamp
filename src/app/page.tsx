@@ -19,27 +19,6 @@ const sponsorLogos = Array.from(
 );
 
 export default function Home() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isSliding, setIsSliding] = useState(false);
-
-  const prevSlide = () => {
-    if (isSliding) return;
-    setIsSliding(true);
-    setTimeout(() => setIsSliding(false), 500);
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? bcc_images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextSlide = () => {
-    if (isSliding) return;
-    setIsSliding(true);
-    setTimeout(() => setIsSliding(false), 500);
-    setCurrentIndex((prevIndex) =>
-      prevIndex === bcc_images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   return (
     <>
       <Navbar />
