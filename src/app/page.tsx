@@ -3,13 +3,6 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import website_logo from "../../public/bg-assets/bcc-logo.png";
 import calabarzon_background from "../../public/bg-assets/calabarzon.jpg";
-import { useState } from "react";
-
-const bcc_images = Array.from(
-  { length: 10 },
-  (_, i) =>
-    `../../bcc2024-images/bcc-2024-${String(i + 1).padStart(2, "0")}.jpg`
-);
 
 // Placeholder logos
 const sponsorLogos = Array.from(
@@ -94,8 +87,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-
-      {/* Image Carousel */}
 
       {/* Image Collection */}
       <div className="flex justify-center w-full py-12 gap-4 flex-wrap max-w-[1500px] mx-auto">
