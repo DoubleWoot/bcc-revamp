@@ -46,7 +46,7 @@ export default function Home() {
       <Navbar />
       <div className="pt-20">
         <img
-          className="w-[100%] object-cover"
+          className="w-[100%] h-[800px] object-cover"
           src={calabarzon_background.src}
           alt="Taal Lake"
           draggable="false"
@@ -87,74 +87,97 @@ export default function Home() {
         </h1>
         <iframe
           className="rounded-lg mx-auto pt-6"
-          width="1280"
-          height="720"
+          width="854"
+          height="480"
           src="https://www.youtube.com/embed/ZHGzJjPRQog?si=uK496HWK77DXX6bw"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-      </div>
-
-      {/* Image Carousel */}
-      <div className="w-full py-12">
-        <div className="relative mx-auto max-w-3xl overflow-hidden">
-          <div
-            className="flex transition-transform duration-500"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        <div className="flex justify-center space-x-16 mt-6">
+          <a
+            href="https://drive.google.com/drive/folders/1QIc8MWpwmBHxtYUixldjByeUswsHnJZw"
+            target="_blank"
+            rel="noopener"
           >
-            {bcc_images.map((image, index) => (
-              <img
-                key={index}
-                className="w-full h-96 object-cover object-center aspect-[3/4] rounded-lg flex-shrink-0"
-                src={image}
-                alt={`BCC 2024 ${index + 1}`}
-                draggable="false"
-              />
-            ))}
-          </div>
-
-          {/* Left Button */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800/75 p-2 rounded-full text-white hover:bg-gray-600"
+            <button className="p-4 bg-[#E9E9E9] text-[#0F1728] font-mono font-bold  text-3xl rounded-lg">
+              Day 1
+            </button>
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/1pzB4nGSJq8OmLLxSJbSCP0kbeO8p4ZwA"
+            target="_blank"
+            rel="noopener"
           >
-            <ChevronLeft size={32} />
-          </button>
-
-          {/* Right Button */}
-          <button
-            onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800/75 p-2 rounded-full text-white hover:bg-gray-600"
-          >
-            <ChevronRight size={32} />
-          </button>
-
-          <div className="flex justify-center space-x-16 mt-6">
-            <a
-              href="https://drive.google.com/drive/folders/1QIc8MWpwmBHxtYUixldjByeUswsHnJZw"
-              target="_blank"
-              rel="noopener"
-            >
-              <button className="p-4 bg-[#E9E9E9] text-[#0F1728] font-mono font-bold  text-3xl rounded-lg">
-                Day 1
-              </button>
-            </a>
-            <a
-              href="https://drive.google.com/drive/folders/1pzB4nGSJq8OmLLxSJbSCP0kbeO8p4ZwA"
-              target="_blank"
-              rel="noopener"
-            >
-              <button className="p-4 bg-[#E9E9E9] text-[#0F1728] font-mono font-bold  text-3xl rounded-lg">
-                Day 2
-              </button>
-            </a>
-          </div>
+            <button className="p-4 bg-[#E9E9E9] text-[#0F1728] font-mono font-bold  text-3xl rounded-lg">
+              Day 2
+            </button>
+          </a>
         </div>
       </div>
 
-      {/* TODO:  Add the entire list for partners & sponsors */}
+      {/* Image Carousel */}
+
+      {/* Image Collection */}
+      <div className="flex justify-center w-full py-12 gap-4 flex-wrap max-w-[1500px] mx-auto">
+        <img
+          className="w-[315px] h-[315px] object-cover rounded-lg"
+          src="../../bcc2024-images/bcc-2024-01.jpg"
+          alt="BCC 2024"
+        />
+        <img
+          className="w-[615px] h-[315px] object-cover rounded-lg"
+          src="../../bcc2024-images/bcc-2024-02.jpg"
+          alt="BCC 2024"
+        />
+        <div className="flex flex-col gap-4">
+          <img
+            className="w-[315px] h-[150px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-03.jpg"
+            alt="BCC 2024"
+          />
+          <img
+            className="w-[315px] h-[150px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-04.jpg"
+            alt="BCC 2024"
+          />
+        </div>
+        <img
+          className="w-[615px] h-[315px] object-cover rounded-lg"
+          src="../../bcc2024-images/bcc-2024-05.jpg"
+          alt="BCC 2024"
+        />
+        <img
+          className="w-[315px] h-[315px] object-cover rounded-lg"
+          src="../../bcc2024-images/bcc-2024-06.jpg"
+          alt="BCC 2024"
+        />
+        <img
+          className="w-[315px] h-[315px] object-cover rounded-lg"
+          src="../../bcc2024-images/bcc-2024-07.jpg"
+          alt="BCC 2024"
+        />
+        <div className="flex flex-col gap-4">
+          <img
+            className="w-[315px] h-[150px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-08.jpg"
+            alt="BCC 2024"
+          />
+          <img
+            className="w-[315px] h-[150px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-09.jpg"
+            alt="BCC 2024"
+          />
+        </div>
+        <img
+          className="w-[945px] h-[315px] object-cover rounded-lg"
+          src="../../bcc2024-images/bcc-2024-10.jpg"
+          alt="BCC 2024"
+        />
+      </div>
+
+      {/* partners & sponsors */}
       <div className="flex flex-col items-center justify-center my-12 text-center">
         <div className="flex items-center space-x-4">
           <img
