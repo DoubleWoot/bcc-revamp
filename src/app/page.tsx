@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-12 px-72 place-self-center w-full">
+      <div className="py-12 px-72 place-self-center w-full" data-aos="fade-up">
         <p className="font-trap text-4xl text-center">
           <span className="font-bold">The Blockchain Campus Conference</span> is
           a free 2-day nationwide campus conference series designed to tackle
@@ -52,7 +52,37 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="py-12 px-4 w-full place-self-center">
+      {/* TODO: Add a when and where section and embed the location of the venue on Google Maps*/}
+
+      {/* Quotes from last BCC */}
+      <div
+        className="flex justify-center gap-4 bg-white w-full py-12 px-4"
+        data-aos="fade-up"
+      >
+        <div className="bg-[#101218] w-[500px] font-trap p-4 rounded-lg">
+          <p className="text-xl">"Lorem Ipsum Vite"</p>
+          <p className="font-bold pt-12">Sean Cosep</p>
+          <p>Country Lead</p>
+          <p>Credible</p>
+        </div>
+
+        <div className="bg-[#101218] w-[500px] font-trap p-4 rounded-lg">
+          <p className="text-xl">"Lorem Ipsum Vite"</p>
+          <p className="font-bold pt-12">Sean Cosep</p>
+          <p>Country Lead</p>
+          <p>Credible</p>
+        </div>
+
+        <div className="bg-[#101218] w-[500px] font-trap p-4 rounded-lg">
+          <p className="text-xl">"Lorem Ipsum Vite"</p>
+          <p className="font-bold pt-12">Sean Cosep</p>
+          <p>Country Lead</p>
+          <p>Credible</p>
+        </div>
+      </div>
+
+      {/* Video Recap */}
+      <div className="py-12 px-4 w-full place-self-center" data-aos="fade-up">
         <h1 className="font-trap font-bold text-3xl text-center">
           Blockchain Campus Conference 2024 Recap
         </h1>
@@ -89,65 +119,70 @@ export default function Home() {
       </div>
 
       {/* Image Collection */}
-      <div className="flex justify-center w-full py-12 gap-4 flex-wrap max-w-[1500px] mx-auto">
-        <img
-          className="w-[315px] h-[315px] object-cover rounded-lg"
-          src="../../bcc2024-images/bcc-2024-01.jpg"
-          alt="BCC 2024"
-        />
-        <img
-          className="w-[615px] h-[315px] object-cover rounded-lg"
-          src="../../bcc2024-images/bcc-2024-02.jpg"
-          alt="BCC 2024"
-        />
-        <div className="flex flex-col gap-4">
+      <div className="flex justify-center bg-white" data-aos="fade-up">
+        <div className="flex justify-center w-full py-12 gap-4 flex-wrap max-w-[1500px] mx-auto">
           <img
-            className="w-[315px] h-[150px] object-cover rounded-lg"
-            src="../../bcc2024-images/bcc-2024-03.jpg"
+            className="w-[315px] h-[315px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-01.jpg"
             alt="BCC 2024"
           />
           <img
-            className="w-[315px] h-[150px] object-cover rounded-lg"
-            src="../../bcc2024-images/bcc-2024-04.jpg"
+            className="w-[615px] h-[315px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-02.jpg"
+            alt="BCC 2024"
+          />
+          <div className="flex flex-col gap-4">
+            <img
+              className="w-[315px] h-[150px] object-cover rounded-lg"
+              src="../../bcc2024-images/bcc-2024-03.jpg"
+              alt="BCC 2024"
+            />
+            <img
+              className="w-[315px] h-[150px] object-cover rounded-lg"
+              src="../../bcc2024-images/bcc-2024-04.jpg"
+              alt="BCC 2024"
+            />
+          </div>
+          <img
+            className="w-[615px] h-[315px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-05.jpg"
+            alt="BCC 2024"
+          />
+          <img
+            className="w-[315px] h-[315px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-06.jpg"
+            alt="BCC 2024"
+          />
+          <img
+            className="w-[315px] h-[315px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-07.jpg"
+            alt="BCC 2024"
+          />
+          <div className="flex flex-col gap-4">
+            <img
+              className="w-[315px] h-[150px] object-cover rounded-lg"
+              src="../../bcc2024-images/bcc-2024-08.jpg"
+              alt="BCC 2024"
+            />
+            <img
+              className="w-[315px] h-[150px] object-cover rounded-lg"
+              src="../../bcc2024-images/bcc-2024-09.jpg"
+              alt="BCC 2024"
+            />
+          </div>
+          <img
+            className="w-[945px] h-[315px] object-cover rounded-lg"
+            src="../../bcc2024-images/bcc-2024-10.jpg"
             alt="BCC 2024"
           />
         </div>
-        <img
-          className="w-[615px] h-[315px] object-cover rounded-lg"
-          src="../../bcc2024-images/bcc-2024-05.jpg"
-          alt="BCC 2024"
-        />
-        <img
-          className="w-[315px] h-[315px] object-cover rounded-lg"
-          src="../../bcc2024-images/bcc-2024-06.jpg"
-          alt="BCC 2024"
-        />
-        <img
-          className="w-[315px] h-[315px] object-cover rounded-lg"
-          src="../../bcc2024-images/bcc-2024-07.jpg"
-          alt="BCC 2024"
-        />
-        <div className="flex flex-col gap-4">
-          <img
-            className="w-[315px] h-[150px] object-cover rounded-lg"
-            src="../../bcc2024-images/bcc-2024-08.jpg"
-            alt="BCC 2024"
-          />
-          <img
-            className="w-[315px] h-[150px] object-cover rounded-lg"
-            src="../../bcc2024-images/bcc-2024-09.jpg"
-            alt="BCC 2024"
-          />
-        </div>
-        <img
-          className="w-[945px] h-[315px] object-cover rounded-lg"
-          src="../../bcc2024-images/bcc-2024-10.jpg"
-          alt="BCC 2024"
-        />
       </div>
 
       {/* partners & sponsors */}
-      <div className="flex flex-col items-center justify-center my-12 text-center">
+      <div
+        className="flex flex-col items-center justify-center my-12 text-center"
+        data-aos="fade-up"
+      >
         <div className="flex items-center space-x-4">
           <img
             src={website_logo.src}
