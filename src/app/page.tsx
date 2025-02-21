@@ -60,21 +60,21 @@ export default function Home() {
         data-aos="fade-up"
       >
         <div className="bg-[#101218] w-[500px] font-trap p-4 rounded-lg">
-          <p className="text-xl">"Lorem Ipsum Vite"</p>
+          <p className="text-xl">&quot;Lorem Ipsum Vite&quot;</p>
           <p className="font-bold pt-12">Sean Cosep</p>
           <p>Country Lead</p>
           <p>Credible</p>
         </div>
 
         <div className="bg-[#101218] w-[500px] font-trap p-4 rounded-lg">
-          <p className="text-xl">"Lorem Ipsum Vite"</p>
+          <p className="text-xl">&quot;Lorem Ipsum Vite&quot;</p>
           <p className="font-bold pt-12">Sean Cosep</p>
           <p>Country Lead</p>
           <p>Credible</p>
         </div>
 
         <div className="bg-[#101218] w-[500px] font-trap p-4 rounded-lg">
-          <p className="text-xl">"Lorem Ipsum Vite"</p>
+          <p className="text-xl">&quot;Lorem Ipsum Vite&quot;</p>
           <p className="font-bold pt-12">Sean Cosep</p>
           <p>Country Lead</p>
           <p>Credible</p>
