@@ -15,7 +15,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="pt-20">
+
+      {/* Cover Div */}
+      <div className="mt-20 relative">
         <img
           className="w-[100%] h-[800px] object-cover"
           src={calabarzon_background.src}
@@ -23,7 +25,7 @@ export default function Home() {
           draggable="false"
           onContextMenu={(e) => e.preventDefault()}
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-center place-self-center text-center text-8xl max-h-[74vh] font-trap">
+        <div className="absolute inset-0 flex flex-col justify-center items-center place-self-center text-center text-8xl max-h-[74vh] font-trap ">
           <p className="font-bold">BLOCKCHAIN</p>
           <p className="font-bold">CAMPUS 2025</p>
           <p className="font-bold">CONFERENCE</p>
@@ -39,6 +41,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* About Div */}
       <div className="py-12 px-72 place-self-center w-full" data-aos="fade-up">
         <p className="font-trap text-4xl text-center">
           <span className="font-bold">The Blockchain Campus Conference</span> is
