@@ -51,6 +51,14 @@ body {
   overflow-y: scroll;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.section-offset {
+  scroll-margin-top: 70px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

@@ -9,21 +9,21 @@ export default function Navbar() {
     <>
       <nav className="bg-[#101218] p-5 flex justify-between items-center fixed top-0 left-0 w-full z-50">
         {/* Navigation Links */}
-        <div className="flex items-center space-x-8 text-xl">
+        <div className="flex items-center space-x-8 text-lg">
           <a
-            href=""
+            href="#about"
             className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration-300"
           >
             About
           </a>
           <a
-            href=""
+            href="#recap"
             className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration-300"
           >
             Recap
           </a>
           <a
-            href=""
+            href="#sponsors"
             className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration-300"
           >
             Sponsors
@@ -43,28 +43,28 @@ export default function Navbar() {
         {/* Social Media Icons */}
         <div className="flex items-center space-x-3">
           <a href="https://x.com/Bcampusconf" target="_blank" rel="noopner">
-            <img className="h-9 w-9" src={twitter_logo.src} alt="" />
+            <img className="h-8 w-8" src={twitter_logo.src} alt="" />
           </a>
           <a
             href="https://www.facebook.com/bcampusconf/"
             target="_blank"
             rel="noopner"
           >
-            <img className="h-9 w-9" src={facebook_logo.src} alt="" />
+            <img className="h-8 w-8" src={facebook_logo.src} alt="" />
           </a>
           <a
             href="https://www.instagram.com/bcampusconf/"
             target="_blank"
             rel="noopner"
           >
-            <img className="h-9 w-9" src={instagram_logo.src} alt="" />
+            <img className="h-8 w-8" src={instagram_logo.src} alt="" />
           </a>
           <a
             href="https://www.linkedin.com/company/bcampusconf/"
             target="_blank"
             rel="noopner"
           >
-            <img className="h-9 w-9" src={linkedin_logo.src} alt="" />
+            <img className="h-8 w-8" src={linkedin_logo.src} alt="" />
           </a>
         </div>
       </nav>

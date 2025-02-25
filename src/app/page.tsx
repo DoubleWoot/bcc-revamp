@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
 
       {/* Cover Div */}
-      <div className="mt-20 relative">
+      <div className="mt-16 relative">
         <img
           className="w-[100%] h-[800px] object-cover"
           src={calabarzon_background.src}
@@ -25,6 +25,9 @@ export default function Home() {
           draggable="false"
           onContextMenu={(e) => e.preventDefault()}
         />
+        {/* Gradient Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+
         <div className="absolute inset-0 flex flex-col justify-center items-center place-self-center text-center text-8xl max-h-[74vh] font-trap ">
           <p className="font-bold">BLOCKCHAIN</p>
           <p className="font-bold">CAMPUS 2025</p>
@@ -33,8 +36,8 @@ export default function Home() {
             CALABARZON
           </p>
           <button
-            className="font-trap font-bold text-xl text-center border-2 border-white rounded-lg m-4 px-4 pt-4 pb-2
-          transform transition-all duration-300 hover:scale-105 hover:px-6"
+            className="font-trap font-bold text-xl flex items-center justify-center border-2 border-white rounded-lg m-4 px-8 py-3 h-14
+          transform transition-all duration-300 hover:scale-105 hover:px-10"
           >
             REGISTER NOW
           </button>
@@ -42,17 +45,25 @@ export default function Home() {
       </div>
 
       {/* About Div */}
-      <div className="py-12 px-72 place-self-center w-full" data-aos="fade-up">
-        <p className="font-trap text-4xl text-center">
-          <span className="font-bold">The Blockchain Campus Conference</span> is
-          a free 2-day nationwide campus conference series designed to tackle
-          real-world challenges faced by industries such as finance, health,
-          retail, government, logistics, utilities, gaming & entertainment and
-          more through the power of blockchain solutions. Blockchain Campus
-          Conference offers a unique opportunity to learn, connect, and share
-          your skills and creativity while making a tangible impact on the
-          future of business and industry.
-        </p>
+      <div
+        id="about"
+        className="section-offset py-12 px-72 place-self-center w-full"
+        data-aos="fade-up"
+      >
+        <div className="max-w-4xl">
+          <h1 className="font-trap text-4xl font-bold mb-6">
+            The Blockchain Campus Conference
+          </h1>
+          <p className="font-trap text-xl">
+            A free 2-day nationwide campus conference series designed to tackle
+            real-world challenges faced by industries such as finance, health,
+            retail, government, logistics, utilities, gaming & entertainment and
+            more through the power of blockchain solutions. Blockchain Campus
+            Conference offers a unique opportunity to learn, connect, and share
+            your skills and creativity while making a tangible impact on the
+            future of business and industry.
+          </p>
+        </div>
       </div>
 
       {/* TODO: Add a when and where section and embed the location of the venue on Google Maps*/}
@@ -85,7 +96,11 @@ export default function Home() {
       </div>
 
       {/* Video Recap */}
-      <div className="py-12 px-4 w-full place-self-center" data-aos="fade-up">
+      <div
+        id="recap"
+        className="section-offset py-12 px-4 w-full place-self-center"
+        data-aos="fade-up"
+      >
         <h1 className="font-trap font-bold text-3xl text-center">
           Blockchain Campus Conference 2024 Recap
         </h1>
@@ -181,9 +196,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* partners & sponsors */}
+      {/* Partners & Sponsors */}
       <div
-        className="flex flex-col items-center justify-center my-12 text-center"
+        id="sponsors"
+        className="section-offset flex flex-col items-center justify-center my-12 text-center"
         data-aos="fade-up"
       >
         <div className="flex items-center space-x-4">
