@@ -13,49 +13,55 @@ export default function Navbar() {
     <nav className="bg-[#101218] p-5 fixed top-0 left-0 w-full z-50">
       <div className="flex justify-between items-center relative">
         {/* Hamburger Menu Button for Mobile */}
-        <button
-          className="lg:hidden text-white z-20"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        <div className="flex-1 flex items-center">
+          <button
+            className="lg:hidden text-white z-20"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <path
-              d={
-                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
-              }
-            ></path>
-          </svg>
-        </button>
-        <div className="hidden lg:flex items-center space-x-8 text-lg">
-          <a
-            href="#about"
-            className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
-          >
-            About
-          </a>
-          <a
-            href="#recap"
-            className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
-          >
-            Recap
-          </a>
-          <a
-            href="#sponsors"
-            className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
-          >
-            Sponsors
-          </a>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                d={
+                  isMenuOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
+                }
+              ></path>
+            </svg>
+          </button>
+
+          {/* Navigation Links - Desktop */}
+          <div className="hidden lg:flex items-center space-x-8 text-lg">
+            <a
+              href="#about"
+              className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
+            >
+              About
+            </a>
+            <a
+              href="#recap"
+              className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
+            >
+              Recap
+            </a>
+            <a
+              href="#sponsors"
+              className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
+            >
+              Sponsors
+            </a>
+          </div>
         </div>
 
         {/* Website Logo */}
-        <div className="w-1/3 flex justify-center">
+        <div className="flex-1 flex justify-center">
           <img
             className="h-9"
             src={website_logo.src}
@@ -64,58 +70,43 @@ export default function Navbar() {
           />
         </div>
 
-        {/* Navigation Links - Desktop */}
-        <div className="hidden lg:flex items-center space-x-8 text-lg">
-          <a
-            href="#about"
-            className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            About
-          </a>
-          <a
-            href="#recap"
-            className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            Recap
-          </a>
-          <a
-            href="#sponsors"
-            className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            Sponsors
-          </a>
-        </div>
-
         {/* Social Media Icons - Desktop */}
-        <div className="hidden lg:flex items-center space-x-3">
-          <a
-            href="https://x.com/Bcampusconf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="h-8 w-8" src={twitter_logo.src} alt="Twitter" />
-          </a>
-          <a
-            href="https://www.facebook.com/bcampusconf/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="h-8 w-8" src={facebook_logo.src} alt="Facebook" />
-          </a>
-          <a
-            href="https://www.instagram.com/bcampusconf/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="h-8 w-8" src={instagram_logo.src} alt="Instagram" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/bcampusconf/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="h-8 w-8" src={linkedin_logo.src} alt="LinkedIn" />
-          </a>
+        <div className="flex-1 flex justify-end">
+          {" "}
+          <div className="hidden lg:flex items-center space-x-3">
+            <a
+              href="https://x.com/Bcampusconf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="h-8 w-8" src={twitter_logo.src} alt="Twitter" />
+            </a>
+            <a
+              href="https://www.facebook.com/bcampusconf/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="h-8 w-8" src={facebook_logo.src} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/bcampusconf/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="h-8 w-8"
+                src={instagram_logo.src}
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/bcampusconf/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="h-8 w-8" src={linkedin_logo.src} alt="LinkedIn" />
+            </a>
+          </div>
         </div>
       </div>
 
