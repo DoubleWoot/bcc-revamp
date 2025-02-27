@@ -114,13 +114,13 @@ export default function Home() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-        <div className="flex justify-center space-x-16 mt-6">
+        <div className="flex justify-center space-x-8 mt-6">
           <a
             href="https://drive.google.com/drive/folders/1QIc8MWpwmBHxtYUixldjByeUswsHnJZw"
             target="_blank"
             rel="noopener"
           >
-            <button className="p-4 bg-[#E9E9E9] text-[#0F1728] font-mono font-bold  text-3xl rounded-lg">
+            <button className="px-6 py-2 bg-[#101218] text-white font-trap text-lg rounded-lg transition-all duration-300 hover:bg-white hover:text-[#101218] hover:shadow-lg border-2 border-[#101218] active:scale-95">
               Day 1
             </button>
           </a>
@@ -129,7 +129,7 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <button className="p-4 bg-[#E9E9E9] text-[#0F1728] font-mono font-bold  text-3xl rounded-lg">
+            <button className="px-6 py-2 bg-[#101218] text-white font-trap text-lg rounded-lg transition-all duration-300 hover:bg-white hover:text-[#101218] hover:shadow-lg border-2 border-[#101218] active:scale-95">
               Day 2
             </button>
           </a>
