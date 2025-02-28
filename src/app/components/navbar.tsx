@@ -11,9 +11,9 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#101218] p-5 fixed top-0 left-0 w-full z-50">
-      <div className="flex justify-between items-center relative">
-        {/* Hamburger Menu Button for Mobile */}
-        <div className="flex-1 flex items-center">
+      <div className="flex items-center">
+        {/* Hamburger Menu Button for Mobile (Left Side) */}
+        <div className="w-1/4 flex items-center">
           <button
             className="lg:hidden text-white z-20"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -38,22 +38,22 @@ export default function Navbar() {
           </button>
 
           {/* Navigation Links - Desktop */}
-          <div className="hidden lg:flex items-center space-x-8 text-lg">
+          <div className="hidden lg:flex items-center space-x-8 text-lg pl-4">
             <a
               href="#about"
-              className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
+              className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration 300"
             >
               About
             </a>
             <a
               href="#recap"
-              className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
+              className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration 300"
             >
               Recap
             </a>
             <a
               href="#sponsors"
-              className="font-trap font-medium text-gray-400 hover:text-white transition colors duration 300"
+              className="font-trap font-medium text-gray-400 hover:text-white transition-colors duration 300"
             >
               Sponsors
             </a>
@@ -61,17 +61,19 @@ export default function Navbar() {
         </div>
 
         {/* Website Logo */}
-        <div className="flex-1 flex justify-center">
-          <img
-            className="h-9"
-            src={website_logo.src}
-            alt="Blockchain Campus Conference Logo"
-            draggable="false"
-          />
+        <div className="w-2/4 flex justify-center items-center">
+          <div className="flex justify-center w-full">
+            <img
+              className="h-9 mx-auto"
+              src={website_logo.src}
+              alt="Blockchain Campus Conference Logo"
+              draggable="false"
+            />
+          </div>
         </div>
 
         {/* Social Media Icons - Desktop */}
-        <div className="flex-1 flex justify-end">
+        <div className="w-1/4 flex justify-end">
           {" "}
           <div className="hidden lg:flex items-center space-x-3">
             <a
@@ -111,7 +113,11 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"} pt-4`}>
+      <div
+        className={`lg:hidden ${
+          isMenuOpen ? "block" : "hidden"
+        } pt-4 bg-[#101218] border-t border-gray-800 mt-4`}
+      >
         <div className="flex flex-col space-y-4">
           <a
             href="#about"
