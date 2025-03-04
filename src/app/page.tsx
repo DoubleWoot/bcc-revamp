@@ -149,58 +149,58 @@ export default function Home() {
 
       {/* Image Collection */}
       <div className="flex justify-center bg-white" data-aos="fade-up">
-        <div className="flex justify-center w-full py-12 gap-4 flex-wrap max-w-[1500px] mx-auto">
+        <div className="flex justify-center w-full py-12 gap-4 flex-wrap max-w-[1500px] mx-auto px-4">
           <img
-            className="w-[315px] h-[315px] object-cover rounded-lg"
+            className="w-full sm:w-[315px] h-[250px] sm:h-[315px] object-cover rounded-lg"
             src="../../bcc2024-images/bcc-2024-01.jpg"
             alt="BCC 2024"
           />
           <img
-            className="w-[615px] h-[315px] object-cover rounded-lg"
+            className="w-full sm:w-[615px] h-[250px] sm:h-[315px] object-cover rounded-lg"
             src="../../bcc2024-images/bcc-2024-02.jpg"
             alt="BCC 2024"
           />
-          <div className="flex flex-col gap-4">
+          <div className="w-full sm:w-auto sm:flex sm:flex-col sm:gap-4">
             <img
-              className="w-[315px] h-[150px] object-cover rounded-lg"
+              className="w-full sm:w-[315px] h-[250px] sm:h-[150px] object-cover rounded-lg mb-4 sm:mb-0"
               src="../../bcc2024-images/bcc-2024-03.jpg"
               alt="BCC 2024"
             />
             <img
-              className="w-[315px] h-[150px] object-cover rounded-lg"
+              className="w-full sm:w-[315px] h-[250px] sm:h-[150px] object-cover rounded-lg"
               src="../../bcc2024-images/bcc-2024-04.jpg"
               alt="BCC 2024"
             />
           </div>
           <img
-            className="w-[615px] h-[315px] object-cover rounded-lg"
+            className="w-full sm:w-[615px] h-[250px] sm:h-[315px] object-cover rounded-lg"
             src="../../bcc2024-images/bcc-2024-05.jpg"
             alt="BCC 2024"
           />
           <img
-            className="w-[315px] h-[315px] object-cover rounded-lg"
+            className="w-full sm:w-[315px] h-[250px] sm:h-[315px] object-cover rounded-lg"
             src="../../bcc2024-images/bcc-2024-06.jpg"
             alt="BCC 2024"
           />
           <img
-            className="w-[315px] h-[315px] object-cover rounded-lg"
+            className="w-full sm:w-[315px] h-[250px] sm:h-[315px] object-cover rounded-lg"
             src="../../bcc2024-images/bcc-2024-07.jpg"
             alt="BCC 2024"
           />
-          <div className="flex flex-col gap-4">
+          <div className="w-full sm:w-auto sm:flex sm:flex-col sm:gap-4">
             <img
-              className="w-[315px] h-[150px] object-cover rounded-lg"
+              className="w-full sm:w-[315px] h-[250px] sm:h-[150px] object-cover rounded-lg mb-4 sm:mb-0"
               src="../../bcc2024-images/bcc-2024-08.jpg"
               alt="BCC 2024"
             />
             <img
-              className="w-[315px] h-[150px] object-cover rounded-lg"
+              className="w-full sm:w-[315px] h-[250px] sm:h-[150px] object-cover rounded-lg"
               src="../../bcc2024-images/bcc-2024-09.jpg"
               alt="BCC 2024"
             />
           </div>
           <img
-            className="w-[945px] h-[315px] object-cover rounded-lg"
+            className="w-full sm:w-[945px] h-[250px] sm:h-[315px] object-cover rounded-lg"
             src="../../bcc2024-images/bcc-2024-10.jpg"
             alt="BCC 2024"
           />
@@ -210,16 +210,17 @@ export default function Home() {
       {/* Partners & Sponsors */}
       <div
         id="sponsors"
-        className="section-offset flex flex-col items-center justify-center my-12 text-center"
+        className="section-offset flex flex-col items-center justify-center pt-12 text-center px-4"
         data-aos="fade-up"
       >
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-center gap-2">
           <img
             src={website_logo.src}
             alt="Blockchain Campus Conference Logo"
             draggable="false"
+            className="h-8"
           />
-          <h1 className="font-trap font-bold text-3xl">
+          <h1 className="font-trap font-bold text-2xl">
             Our Partners & Sponsors
           </h1>
         </div>
@@ -227,19 +228,24 @@ export default function Home() {
           href="https://docs.google.com/forms/d/e/1FAIpQLSdRbCzlbmlWxpr8KXvmgUl5IC_ciaNwQMvrCMpepUw5wK-eqA/viewform"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 px-6 py-2 bg-gray-200 text-[#0F1728] font-trap font-bold rounded-full hover:bg-gray-300 transition"
+          className="mt-6 px-4 sm:px-6 py-2 bg-gray-200 text-[#0F1728] font-trap font-bold text-sm sm:text-base rounded-full hover:bg-gray-300 transition w-full sm:w-auto max-w-xs"
         >
           Become A Sponsor/Partner
         </a>
-        <div className="grid grid-cols-6 mt-6 px-4 space-x-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 mt-8 w-full max-w-6xl">
           {sponsorLogos.map((logo, index) => (
-            <img
+            <div
               key={index}
-              src={logo}
-              className="x-[200px] h-[200px] object-contain mx-auto"
-              alt="Our sponsors"
-              draggable="false"
-            />
+              className="aspect-square w-full flex items-center justify-center p-4"
+            >
+              <img
+                key={index}
+                src={logo}
+                className="w-[150px] sm:w-[180px] lg:w-[200px] h-[150px] sm:h-[180px] lg:h-[200px] object-contain"
+                alt="Our sponsors"
+                draggable="false"
+              />
+            </div>
           ))}
         </div>
       </div>
